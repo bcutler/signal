@@ -3,16 +3,16 @@
 #' Groups users into cohorts of n days, based on the day they signed up. Also calculates
 #' the number of users who performed an event for the first time in each cohort.
 #'
+#' @param df a dataframe containing user ids, cohort dates (e.g. signup date), and events dates
 #' @param days number of days in each period (typically 7, 14, or 28)
 #' @param periods the number of periods in each cohort
-#' @param end the date from which the cohorts are caculated (defaults to yesterday)
 #'
 #' @import plyr reshape
 #'
 #' @keywords cohort
 #' @export
 #' @examples
-#' cohort()
+#' cohort(df, days=7, periods=4)
 cohort <- function(df, days=7, periods=4) {
 	df <- df[, 1:3]
 	names(df) <- c('id', 'cohort.date', 'event.date')
