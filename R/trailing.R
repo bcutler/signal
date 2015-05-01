@@ -1,7 +1,7 @@
 #' Trailing
 #'
 #' This function calculates the trailing trend in a vector.
-#' @param days Number of days trend should cover. Defaults to 28.
+#' @param days Number of days trend should cover. Defaults to 7.
 #' @keywords trailing
 #' @export
 #' @examples
