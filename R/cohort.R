@@ -18,6 +18,8 @@
 cohort <- function(df, days=7, periods=4) {
 	df <- df[, 1:3]
 	names(df) <- c('id', 'cohort.date', 'event.date')
+	df$cohort.date <- as.Date(df$cohort.date)
+	df$event.date <- as.Date(df$event.date)
 	
 	# Create cohorts
 	end.date <- max(df$event.date, na.rm=TRUE)
