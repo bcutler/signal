@@ -4,10 +4,10 @@
 \alias{trailing}
 \title{Trailing}
 \usage{
-trailing(v, days = 28)
+trailing(v, days = 7)
 }
 \arguments{
-\item{days}{Number of days trend should cover. Defaults to 28.}
+\item{days}{Number of days trend should cover. Defaults to 7.}
 }
 \description{
 This function calculates the trailing trend in a vector.
