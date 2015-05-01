@@ -7,15 +7,16 @@
 cohort(df, days = 7, periods = 4)
 }
 \arguments{
-\item{df}{a dataframe containing user ids, cohort dates (e.g. signup date), and events dates}
+\item{df}{a dataframe containing user ids, cohort dates, and event dates}
 
 \item{days}{number of days in each period (typically 7, 14, or 28)}
 
 \item{periods}{the number of periods in each cohort}
 }
 \description{
-Groups users into cohorts of n days, based on the day they signed up. Also calculates
-the number of users who performed an event for the first time in each cohort.
+Groups users into cohorts of n days, based on a cohort date (e.g. signup date).
+Also calculates the number of users who performed an event for the first time
+in each cohort.
 }
 \examples{
 cohort(df, days=7, periods=4)
